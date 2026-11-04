@@ -1,0 +1,563 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sergio Herrera Castro | Mechatronics engineering e-portfolio</title>
+  <meta name="description" content="e-Portfolio of Sergio Antonio Herrera Castro, mechatronics engineer and Diplôme d'Ingénieur student at INP ENSEEIHT (3EA), Toulouse.">
+  <meta name="theme-color" content="#F7F4EC">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23F7F4EC'/%3E%3Ctext x='16' y='21.5' font-family='Arial,sans-serif' font-weight='700' font-size='13' fill='%2323241D' text-anchor='middle'%3ESH%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,400;1,6..72,400&display=swap">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <a class="skip" href="#main" data-i18n="ui.skip">Skip to content</a>
+
+  <!-- shared backgrounds for the hero cards -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <defs>
+      <linearGradient id="bg-sky" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="#D9DFCB"/>
+        <stop offset="1" stop-color="#F0EFE4"/>
+      </linearGradient>
+      <filter id="bg-blur" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="22"/></filter>
+    </defs>
+    <symbol id="bg-a" viewBox="0 0 300 400" preserveAspectRatio="xMidYMid slice">
+      <rect width="300" height="400" fill="url(#bg-sky)"/>
+      <g filter="url(#bg-blur)">
+        <ellipse cx="10" cy="300" rx="90" ry="140" fill="#9FB07A"/>
+        <ellipse cx="300" cy="380" rx="120" ry="70" fill="#C2CCA4"/>
+        <ellipse cx="290" cy="120" rx="50" ry="90" fill="#B5C193" opacity=".7"/>
+      </g>
+    </symbol>
+    <symbol id="bg-b" viewBox="0 0 300 400" preserveAspectRatio="xMidYMid slice">
+      <rect width="300" height="400" fill="url(#bg-sky)"/>
+      <g filter="url(#bg-blur)">
+        <ellipse cx="300" cy="260" rx="90" ry="160" fill="#93A46B"/>
+        <ellipse cx="0" cy="390" rx="130" ry="70" fill="#C9D1AC"/>
+        <ellipse cx="40" cy="330" rx="40" ry="60" fill="#D8CCAF" opacity=".8"/>
+      </g>
+    </symbol>
+  </svg>
+
+  <header class="topbar">
+    <div class="lang" role="group" data-i18n-aria="ui.langLabel" aria-label="Language">
+      <button type="button" data-lang="en" lang="en" aria-label="English">EN</button>
+      <button type="button" data-lang="fr" lang="fr" aria-label="Français">FR</button>
+      <button type="button" data-lang="es" lang="es" aria-label="Español">ES</button>
+    </div>
+
+    <a class="brand" href="#welcome" aria-label="Sergio Herrera Castro"><span>Sergio</span><span>Herrera</span></a>
+
+    <div class="top-actions">
+      <a class="talk" href="#contact" data-i18n="ui.letsTalk">Let's talk</a>
+      <button class="menu-btn" type="button" aria-expanded="false" aria-controls="site-nav" data-i18n-aria="ui.menu" aria-label="Menu">
+        <span class="menu-icon" aria-hidden="true"></span>
+      </button>
+    </div>
+
+    <nav class="nav" id="site-nav" data-i18n-aria="ui.navLabel" aria-label="Main navigation">
+      <ul>
+        <li><a href="#welcome" data-link="welcome" data-n="01" data-i18n="nav.welcome">Welcome</a></li>
+        <li><a href="#engineering" data-link="engineering" data-n="02" data-i18n="nav.engineering">Engineering course</a></li>
+        <li><a href="#projects" data-link="projects" data-n="03" data-i18n="nav.projects">Projects</a></li>
+        <li><a href="#mobility" data-link="mobility" data-n="04" data-i18n="nav.mobility">International mobility</a></li>
+        <li><a href="#sustainability" data-link="sustainability" data-n="05" data-i18n="nav.sustainability">Sustainability &amp; civic engagement</a></li>
+        <li><a href="#sport" data-link="sport" data-n="06" data-i18n="nav.sport">Sport &amp; other activities</a></li>
+        <li><a href="#career" data-link="career" data-n="07" data-i18n="nav.career">Career development</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main" tabindex="-1">
+
+    <!-- ============ 01 WELCOME ============ -->
+    <section class="page page--welcome" data-page="welcome" aria-labelledby="welcome-h1">
+      <div class="hero">
+        <div class="hero-text">
+          <p class="label" data-i18n="hero.name">Sergio Antonio Herrera Castro, INP ENSEEIHT</p>
+          <h1 class="hero-title" id="welcome-h1">
+            <span><span data-i18n="hero.t1a">Mechatronics,</span> <em data-i18n="hero.t1b">end to end</em>.</span>
+            <span data-i18n="hero.t2">From the model to the motion.</span>
+          </h1>
+          <a class="btn" href="#intro" data-i18n="hero.cta">Explore the portfolio</a>
+        </div>
+
+        <nav class="strip" data-i18n-aria="ui.heroLabel" aria-label="Portfolio sections">
+          <!-- Engineering course: angular positioner -->
+          <a class="card" href="#engineering">
+            <svg class="card-bg" aria-hidden="true"><use href="#bg-a"/></svg>
+            <svg class="card-obj" viewBox="0 0 320 440" aria-hidden="true">
+              <defs>
+                <linearGradient id="m-body" x1="0" y1="0" x2="1" y2="0">
+                  <stop offset="0" stop-color="#5A5950"/><stop offset=".35" stop-color="#8E8C82"/><stop offset="1" stop-color="#4A4943"/>
+                </linearGradient>
+                <linearGradient id="m-metal" x1="0" y1="0" x2="1" y2="0">
+                  <stop offset="0" stop-color="#6A685F"/><stop offset=".5" stop-color="#CFCDC2"/><stop offset="1" stop-color="#6A685F"/>
+                </linearGradient>
+                <radialGradient id="m-gear" cx=".4" cy=".35" r=".8">
+                  <stop offset="0" stop-color="#D0CEC3"/><stop offset="1" stop-color="#8A887E"/>
+                </radialGradient>
+              </defs>
+              <path d="M160 392 C160 420 138 422 128 440" stroke="#3A3B34" stroke-width="6" fill="none" stroke-linecap="round"/>
+              <path d="M172 392 C176 416 196 424 204 440" stroke="#4F6530" stroke-width="5" fill="none" stroke-linecap="round"/>
+              <rect x="100" y="250" width="120" height="142" rx="12" fill="url(#m-body)"/>
+              <path d="M106 272H214M106 292H214M106 352H214M106 372H214" stroke="#23241D" stroke-opacity=".2" stroke-width="2"/>
+              <rect x="128" y="302" width="64" height="30" rx="3" fill="#F7F4EC" opacity=".9"/>
+              <path d="M136 312H178M136 322H164" stroke="#6B6A5F" stroke-width="2.4" stroke-linecap="round"/>
+              <circle cx="204" cy="266" r="4" fill="#C9844F"/>
+              <rect x="86" y="230" width="148" height="24" rx="5" fill="#5E5D55"/>
+              <circle cx="100" cy="242" r="4" fill="#3A3B34"/><circle cx="220" cy="242" r="4" fill="#3A3B34"/>
+              <rect x="153" y="168" width="14" height="66" fill="url(#m-metal)"/>
+              <circle cx="160" cy="150" r="92" fill="none" stroke="#8A887E" stroke-width="16" stroke-dasharray="9 7.06" transform="rotate(20 160 150)"/>
+              <circle cx="160" cy="150" r="86" fill="url(#m-gear)"/>
+              <g fill="#E4E7D8">
+                <circle cx="160" cy="102" r="12"/><circle cx="205.6" cy="135.2" r="12"/><circle cx="188.2" cy="188.8" r="12"/><circle cx="131.8" cy="188.8" r="12"/><circle cx="114.4" cy="135.2" r="12"/>
+              </g>
+              <path d="M160 150L214 96" stroke="#C9844F" stroke-width="4" stroke-linecap="round"/>
+              <circle cx="160" cy="150" r="20" fill="#5E5D55"/>
+              <circle cx="160" cy="150" r="7" fill="#3A3B34"/>
+              <path d="M92 230C84 212 94 200 108 202C108 216 102 226 92 230Z" fill="#6F8A3A"/>
+              <path d="M100 230C104 214 120 208 128 216C120 224 110 228 100 230Z" fill="#9FB07A"/>
+            </svg>
+            <span class="card-label" data-i18n="nav.engineering">Engineering course</span>
+          </a>
+
+          <!-- Projects: turbofan -->
+          <a class="card" href="#projects">
+            <svg class="card-bg" aria-hidden="true"><use href="#bg-b"/></svg>
+            <svg class="card-obj" viewBox="0 0 320 440" aria-hidden="true">
+              <defs>
+                <linearGradient id="t-nacelle" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0" stop-color="#B3B1A6"/><stop offset=".55" stop-color="#7A786E"/><stop offset="1" stop-color="#4A4943"/>
+                </linearGradient>
+                <linearGradient id="t-blade" x1="0" y1="0" x2="1" y2="0">
+                  <stop offset="0" stop-color="#DAD8CE"/><stop offset="1" stop-color="#959388"/>
+                </linearGradient>
+                <radialGradient id="t-spin" cx=".35" cy=".3" r=".8">
+                  <stop offset="0" stop-color="#F7F4EC"/><stop offset="1" stop-color="#8A887E"/>
+                </radialGradient>
+                <path id="t-b" d="M-6 -26C6 -52 16 -80 12 -108L-4 -108C-2 -80 -8 -52 -6 -26Z" fill="url(#t-blade)"/>
+              </defs>
+              <circle cx="160" cy="190" r="134" fill="url(#t-nacelle)"/>
+              <circle cx="160" cy="190" r="114" fill="#2E2F29"/>
+              <g transform="translate(160 190)">
+                <use href="#t-b" transform="rotate(0)"/><use href="#t-b" transform="rotate(25.7)"/><use href="#t-b" transform="rotate(51.4)"/>
+                <use href="#t-b" transform="rotate(77.1)"/><use href="#t-b" transform="rotate(102.9)"/><use href="#t-b" transform="rotate(128.6)"/>
+                <use href="#t-b" transform="rotate(154.3)"/><use href="#t-b" transform="rotate(180)"/><use href="#t-b" transform="rotate(205.7)"/>
+                <use href="#t-b" transform="rotate(231.4)"/><use href="#t-b" transform="rotate(257.1)"/><use href="#t-b" transform="rotate(282.9)"/>
+                <use href="#t-b" transform="rotate(308.6)"/><use href="#t-b" transform="rotate(334.3)"/>
+              </g>
+              <circle cx="160" cy="190" r="30" fill="url(#t-spin)"/>
+              <path d="M160 190C160 180 170 176 176 182" stroke="#23241D" stroke-opacity=".5" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+              <path d="M44 126C40 106 54 96 70 100C68 116 58 124 44 126Z" fill="#6F8A3A"/>
+              <path d="M52 128C60 112 76 108 84 116C74 124 62 128 52 128Z" fill="#9FB07A"/>
+            </svg>
+            <span class="card-label" data-i18n="nav.projects">Projects</span>
+          </a>
+
+          <!-- Career development: robot arm holding a sprout -->
+          <a class="card" href="#career">
+            <svg class="card-bg" aria-hidden="true"><use href="#bg-a"/></svg>
+            <svg class="card-obj" viewBox="0 0 320 440" aria-hidden="true">
+              <defs>
+                <linearGradient id="a-body" x1="0" y1="0" x2="1" y2="0">
+                  <stop offset="0" stop-color="#5A5950"/><stop offset=".4" stop-color="#8E8C82"/><stop offset="1" stop-color="#4A4943"/>
+                </linearGradient>
+                <radialGradient id="a-joint" cx=".38" cy=".32" r=".8">
+                  <stop offset="0" stop-color="#D0CEC3"/><stop offset="1" stop-color="#6A685F"/>
+                </radialGradient>
+              </defs>
+              <ellipse cx="160" cy="420" rx="92" ry="9" fill="#23241D" opacity=".1"/>
+              <rect x="100" y="382" width="120" height="34" rx="8" fill="url(#a-body)"/>
+              <rect x="128" y="340" width="64" height="48" rx="10" fill="#5E5D55"/>
+              <path d="M150 352C118 324 98 266 102 214" stroke="#4F6530" stroke-width="3" fill="none" stroke-linecap="round"/>
+              <path d="M160 330L112 200" stroke="#7A786E" stroke-width="38" stroke-linecap="round"/>
+              <path d="M152 326L104 198" stroke="#A7A59A" stroke-width="10" stroke-linecap="round" opacity=".7"/>
+              <circle cx="160" cy="330" r="26" fill="url(#a-joint)"/>
+              <circle cx="160" cy="330" r="10" fill="#3A3B34"/>
+              <path d="M112 200L214 128" stroke="#8E8C82" stroke-width="30" stroke-linecap="round"/>
+              <path d="M114 192L210 124" stroke="#BDBBB0" stroke-width="8" stroke-linecap="round" opacity=".7"/>
+              <circle cx="112" cy="200" r="22" fill="url(#a-joint)"/>
+              <circle cx="112" cy="200" r="8" fill="#3A3B34"/>
+              <g transform="rotate(-20 214 128)">
+                <rect x="203" y="134" width="22" height="28" rx="4" fill="#5E5D55"/>
+                <path d="M207 160V184L213 190M221 160V184L215 190" stroke="#3A3B34" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M214 192V214" stroke="#4F6530" stroke-width="2" fill="none"/>
+                <path d="M214 212C202 210 196 198 200 188C210 190 216 200 214 212Z" fill="#6F8A3A"/>
+                <path d="M214 210C222 204 232 206 236 214C228 220 218 218 214 210Z" fill="#9FB07A"/>
+              </g>
+              <circle cx="214" cy="128" r="17" fill="url(#a-joint)"/>
+              <circle cx="214" cy="128" r="5" fill="#C9844F"/>
+              <path d="M92 414C86 398 92 388 104 386C106 398 102 408 92 414Z" fill="#6F8A3A"/>
+              <path d="M100 414C104 402 116 398 122 404C116 410 108 414 100 414Z" fill="#9FB07A"/>
+              <path d="M222 414C226 402 238 398 244 404C238 410 230 414 222 414Z" fill="#9FB07A"/>
+            </svg>
+            <span class="card-label" data-i18n="nav.career">Career development</span>
+          </a>
+
+          <!-- International mobility: Bogotá to Toulouse -->
+          <a class="card" href="#mobility">
+            <svg class="card-bg" aria-hidden="true"><use href="#bg-b"/></svg>
+            <svg class="card-obj" viewBox="0 0 320 440" aria-hidden="true">
+              <defs>
+                <radialGradient id="g-globe" cx=".38" cy=".32" r=".85">
+                  <stop offset="0" stop-color="#FBFAF4"/><stop offset="1" stop-color="#CBD2B6"/>
+                </radialGradient>
+                <clipPath id="g-clip"><circle cx="160" cy="210" r="104"/></clipPath>
+              </defs>
+              <circle cx="160" cy="210" r="104" fill="url(#g-globe)"/>
+              <g clip-path="url(#g-clip)" fill="none" stroke="#23241D" stroke-opacity=".18" stroke-width="1.2">
+                <ellipse cx="160" cy="210" rx="40" ry="104"/>
+                <ellipse cx="160" cy="210" rx="76" ry="104"/>
+                <path d="M160 106V314M56 210H264M64 160H256M64 260H256"/>
+                <path d="M92 176c18-10 30 4 44 0s14 18 4 28-26 6-30 22-20 8-24-6 0-32 6-44z" fill="#B5C193" stroke="none"/>
+                <path d="M196 140c14-6 34-2 44 10s-6 22-18 20-16 10-28 4-10-28 2-34z" fill="#B5C193" stroke="none"/>
+              </g>
+              <circle cx="160" cy="210" r="104" fill="none" stroke="#23241D" stroke-opacity=".25" stroke-width="1.5"/>
+              <path d="M112 248Q118 100 212 156" fill="none" stroke="#4F6530" stroke-width="2.6" stroke-dasharray="5 6" stroke-linecap="round"/>
+              <circle cx="112" cy="248" r="6" fill="#4F6530"/>
+              <circle cx="212" cy="156" r="6" fill="#C9844F"/>
+              <path d="M160 314V346M128 352H192" stroke="#7A786E" stroke-width="5" stroke-linecap="round"/>
+            </svg>
+            <span class="card-label" data-i18n="nav.mobility">International mobility</span>
+          </a>
+
+          <!-- Sport: rugby ball -->
+          <a class="card" href="#sport">
+            <svg class="card-bg" aria-hidden="true"><use href="#bg-a"/></svg>
+            <svg class="card-obj" viewBox="0 0 320 440" aria-hidden="true">
+              <defs>
+                <radialGradient id="r-ball" cx=".4" cy=".3" r=".9">
+                  <stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#CFCAB8"/>
+                </radialGradient>
+              </defs>
+              <g transform="rotate(-28 160 230)">
+                <ellipse cx="160" cy="230" rx="116" ry="66" fill="url(#r-ball)"/>
+                <ellipse cx="160" cy="230" rx="116" ry="66" fill="none" stroke="#23241D" stroke-opacity=".15" stroke-width="2"/>
+                <path d="M96 175Q80 230 96 285M224 175Q240 230 224 285" stroke="#4F6530" stroke-width="9" fill="none"/>
+                <path d="M118 212Q160 202 202 212" stroke="#6B6A5F" stroke-width="2" fill="none"/>
+                <path d="M134 202v14M148 200v14M162 199v14M176 200v14M190 202v14" stroke="#6B6A5F" stroke-width="1.6" stroke-linecap="round"/>
+              </g>
+              <path d="M120 360C112 340 120 326 134 324C136 340 130 352 120 360Z" fill="#6F8A3A"/>
+              <path d="M128 360C134 344 150 338 158 346C150 354 140 358 128 360Z" fill="#9FB07A"/>
+              <path d="M196 362C200 346 214 342 220 350C212 358 204 360 196 362Z" fill="#9FB07A"/>
+            </svg>
+            <span class="card-label" data-i18n="nav.sport">Sport &amp; other activities</span>
+          </a>
+        </nav>
+      </div>
+
+      <div class="wrap intro" id="intro">
+        <figure class="media media--portrait">
+          <img src="assets/img/profile.jpg" alt="Sergio Antonio Herrera Castro" width="600" height="750" loading="lazy">
+          <figcaption class="media-todo" data-i18n="welcome.photo"></figcaption>
+        </figure>
+        <div class="intro-text">
+          <p class="label" data-i18n="welcome.label">Hello</p>
+          <h2 class="intro-title" data-i18n="welcome.title"></h2>
+          <p data-i18n="welcome.p1"></p>
+          <p data-i18n="welcome.p2"></p>
+          <dl class="facts">
+            <div><dt data-i18n="welcome.f1k"></dt><dd data-i18n="welcome.f1v"></dd></div>
+            <div><dt data-i18n="welcome.f2k"></dt><dd data-i18n="welcome.f2v"></dd></div>
+            <div><dt data-i18n="welcome.f3k"></dt><dd data-i18n="welcome.f3v"></dd></div>
+            <div><dt data-i18n="welcome.f4k"></dt><dd data-i18n="welcome.f4v"></dd></div>
+          </dl>
+        </div>
+      </div>
+
+      <div class="wrap map">
+        <h2 class="label" data-i18n="welcome.mapTitle">Inside this portfolio</h2>
+        <ol class="map-list">
+          <li><a href="#engineering"><span class="map-n">02</span><span class="map-t" data-i18n="nav.engineering"></span><span class="map-d" data-i18n="welcome.m.engineering"></span></a></li>
+          <li><a href="#projects"><span class="map-n">03</span><span class="map-t" data-i18n="nav.projects"></span><span class="map-d" data-i18n="welcome.m.projects"></span></a></li>
+          <li><a href="#mobility"><span class="map-n">04</span><span class="map-t" data-i18n="nav.mobility"></span><span class="map-d" data-i18n="welcome.m.mobility"></span></a></li>
+          <li><a href="#sustainability"><span class="map-n">05</span><span class="map-t" data-i18n="nav.sustainability"></span><span class="map-d" data-i18n="welcome.m.sustainability"></span></a></li>
+          <li><a href="#sport"><span class="map-n">06</span><span class="map-t" data-i18n="nav.sport"></span><span class="map-d" data-i18n="welcome.m.sport"></span></a></li>
+          <li><a href="#career"><span class="map-n">07</span><span class="map-t" data-i18n="nav.career"></span><span class="map-d" data-i18n="welcome.m.career"></span></a></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ 02 ENGINEERING COURSE ============ -->
+    <section class="page" data-page="engineering" hidden aria-labelledby="eng-h1">
+      <div class="wrap wrap--narrow">
+        <header class="page-head">
+          <p class="label">02</p>
+          <h1 class="display" id="eng-h1"><span class="d1" data-i18n="eng.t1"></span> <span class="d2" data-i18n="eng.t2"></span></h1>
+          <p class="lede" data-i18n="eng.lede"></p>
+        </header>
+
+        <div class="rows">
+          <section class="row">
+            <h2 class="row-label" data-i18n="eng.r1"></h2>
+            <div class="row-body">
+              <p data-i18n="eng.r1p"></p>
+              <p data-i18n="eng.r1todo"></p>
+            </div>
+          </section>
+          <section class="row">
+            <h2 class="row-label" data-i18n="eng.r2"></h2>
+            <ol class="row-body timeline">
+              <li><span class="tl-date" data-i18n="eng.tl1.date"></span><h3 data-i18n="eng.tl1.place"></h3><p data-i18n="eng.tl1.what"></p></li>
+              <li><span class="tl-date" data-i18n="eng.tl2.date"></span><h3 data-i18n="eng.tl2.place"></h3><p data-i18n="eng.tl2.what"></p></li>
+              <li><span class="tl-date" data-i18n="eng.tl3.date"></span><h3 data-i18n="eng.tl3.place"></h3><p data-i18n="eng.tl3.what"></p></li>
+            </ol>
+          </section>
+          <section class="row">
+            <h2 class="row-label" data-i18n="eng.r3"></h2>
+            <div class="row-body"><p data-i18n="eng.r3todo"></p></div>
+          </section>
+          <section class="row">
+            <h2 class="row-label" data-i18n="eng.r4"></h2>
+            <div class="row-body skills">
+              <div><h3 data-i18n="eng.sk1.t"></h3><ul class="tags" data-i18n-list="eng.sk1.i"></ul></div>
+              <div><h3 data-i18n="eng.sk2.t"></h3><ul class="tags" data-i18n-list="eng.sk2.i"></ul></div>
+              <div><h3 data-i18n="eng.sk3.t"></h3><ul class="tags" data-i18n-list="eng.sk3.i"></ul></div>
+              <div><h3 data-i18n="eng.sk4.t"></h3><ul class="tags" data-i18n-list="eng.sk4.i"></ul></div>
+              <div><h3 data-i18n="eng.sk5.t"></h3><ul class="tags" data-i18n-list="eng.sk5.i"></ul></div>
+              <div><h3 data-i18n="eng.sk6.t"></h3><ul class="tags" data-i18n-list="eng.sk6.i"></ul></div>
+              <div><h3 data-i18n="eng.sk7.t"></h3><ul class="tags" data-i18n-list="eng.sk7.i"></ul></div>
+            </div>
+          </section>
+          <section class="row">
+            <h2 class="row-label" data-i18n="eng.r5"></h2>
+            <div class="row-body"><p data-i18n="eng.r5todo"></p></div>
+          </section>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 03 PROJECTS ============ -->
+    <section class="page" data-page="projects" hidden aria-labelledby="proj-h1">
+      <div class="wrap">
+        <header class="page-head">
+          <p class="label">03</p>
+          <h1 class="display" id="proj-h1"><span class="d1" data-i18n="proj.t1"></span> <span class="d2" data-i18n="proj.t2"></span></h1>
+          <p class="lede" data-i18n="proj.lede"></p>
+        </header>
+
+        <div class="projects">
+          <article class="project">
+            <figure class="media media--wide">
+              <img src="assets/img/project-turbofan.jpg" alt="" width="800" height="500" loading="lazy">
+              <figcaption class="media-todo" data-i18n="proj.p1.img"></figcaption>
+            </figure>
+            <h2 class="project-title" data-i18n="proj.p1.title"></h2>
+            <ul class="tags" data-i18n-list="proj.p1.tags"></ul>
+            <p data-i18n="proj.p1.text"></p>
+            <p data-i18n="proj.p1.todo"></p>
+          </article>
+          <article class="project">
+            <figure class="media media--wide">
+              <img src="assets/img/project-aire.jpg" alt="" width="800" height="500" loading="lazy">
+              <figcaption class="media-todo" data-i18n="proj.p2.img"></figcaption>
+            </figure>
+            <h2 class="project-title" data-i18n="proj.p2.title"></h2>
+            <ul class="tags" data-i18n-list="proj.p2.tags"></ul>
+            <p data-i18n="proj.p2.text"></p>
+            <p data-i18n="proj.p2.todo"></p>
+          </article>
+          <article class="project">
+            <figure class="media media--wide">
+              <img src="assets/img/project-positioner.jpg" alt="" width="800" height="500" loading="lazy">
+              <figcaption class="media-todo" data-i18n="proj.p3.img"></figcaption>
+            </figure>
+            <h2 class="project-title" data-i18n="proj.p3.title"></h2>
+            <ul class="tags" data-i18n-list="proj.p3.tags"></ul>
+            <p data-i18n="proj.p3.text"></p>
+            <p data-i18n="proj.p3.todo"></p>
+          </article>
+        </div>
+
+        <div class="rows">
+          <section class="row">
+            <h2 class="row-label" data-i18n="proj.r"></h2>
+            <div class="row-body">
+              <h3 class="item-title" data-i18n="proj.res.title"></h3>
+              <p class="meta" data-i18n="proj.res.meta"></p>
+              <p data-i18n="proj.res.todo"></p>
+            </div>
+          </section>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 04 INTERNATIONAL MOBILITY ============ -->
+    <section class="page" data-page="mobility" hidden aria-labelledby="mob-h1">
+      <div class="wrap wrap--narrow">
+        <header class="page-head">
+          <p class="label">04</p>
+          <h1 class="display" id="mob-h1"><span class="d1" data-i18n="mob.t1"></span> <span class="d2" data-i18n="mob.t2"></span></h1>
+          <p class="lede" data-i18n="mob.lede"></p>
+        </header>
+
+        <div class="rows">
+          <section class="row">
+            <h2 class="row-label" data-i18n="mob.r1"></h2>
+            <div class="row-body">
+              <dl class="facts">
+                <div><dt data-i18n="mob.f1k"></dt><dd data-i18n="mob.f1v"></dd></div>
+                <div><dt data-i18n="mob.f2k"></dt><dd data-i18n="mob.f2v"></dd></div>
+                <div><dt data-i18n="mob.f3k"></dt><dd data-i18n="mob.f3v"></dd></div>
+                <div><dt data-i18n="mob.f4k"></dt><dd data-i18n="mob.f4v"></dd></div>
+              </dl>
+              <p data-i18n="mob.r1todo"></p>
+            </div>
+          </section>
+          <section class="row">
+            <h2 class="row-label" data-i18n="mob.r2"></h2>
+            <div class="row-body">
+              <ul class="langs">
+                <li><span class="lang-name" data-i18n="mob.l1k"></span><span class="lang-level" data-i18n="mob.l1v"></span></li>
+                <li><span class="lang-name" data-i18n="mob.l2k"></span><span class="lang-level" data-i18n="mob.l2v"></span></li>
+                <li><span class="lang-name" data-i18n="mob.l3k"></span><span class="lang-level" data-i18n="mob.l3v"></span></li>
+              </ul>
+              <p data-i18n="mob.r2todo"></p>
+            </div>
+          </section>
+          <section class="row">
+            <h2 class="row-label" data-i18n="mob.r3"></h2>
+            <div class="row-body"><p data-i18n="mob.r3todo"></p></div>
+          </section>
+          <section class="row">
+            <h2 class="row-label" data-i18n="mob.r4"></h2>
+            <div class="row-body"><p data-i18n="mob.r4todo"></p></div>
+          </section>
+          <section class="row">
+            <h2 class="row-label" data-i18n="mob.r5"></h2>
+            <div class="row-body"><p data-i18n="mob.r5todo"></p></div>
+          </section>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 05 SUSTAINABILITY & CIVIC ENGAGEMENT ============ -->
+    <section class="page" data-page="sustainability" hidden aria-labelledby="sus-h1">
+      <div class="wrap wrap--narrow">
+        <header class="page-head">
+          <p class="label">05</p>
+          <h1 class="display" id="sus-h1"><span class="d1" data-i18n="sus.t1"></span> <span class="d2" data-i18n="sus.t2"></span></h1>
+          <p class="lede" data-i18n="sus.lede"></p>
+        </header>
+
+        <div class="rows">
+          <section class="row">
+            <h2 class="row-label" data-i18n="sus.r1"></h2>
+            <div class="row-body"><p data-i18n="sus.r1todo"></p></div>
+          </section>
+          <section class="row">
+            <h2 class="row-label" data-i18n="sus.r2"></h2>
+            <div class="row-body"><p data-i18n="sus.r2todo"></p></div>
+          </section>
+          <section class="row">
+            <h2 class="row-label" data-i18n="sus.r3"></h2>
+            <div class="row-body"><p data-i18n="sus.r3todo"></p></div>
+          </section>
+          <section class="row">
+            <h2 class="row-label" data-i18n="sus.r4"></h2>
+            <div class="row-body"><p data-i18n="sus.r4todo"></p></div>
+          </section>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 06 SPORT & OTHER ACTIVITIES ============ -->
+    <section class="page" data-page="sport" hidden aria-labelledby="sport-h1">
+      <div class="wrap wrap--narrow">
+        <header class="page-head">
+          <p class="label">06</p>
+          <h1 class="display" id="sport-h1"><span class="d1" data-i18n="sport.t1"></span> <span class="d2" data-i18n="sport.t2"></span></h1>
+          <p class="lede" data-i18n="sport.lede"></p>
+        </header>
+
+        <div class="rows">
+          <section class="row">
+            <h2 class="row-label" data-i18n="sport.r1"></h2>
+            <div class="row-body"><p data-i18n="sport.r1p"></p></div>
+          </section>
+          <section class="row">
+            <h2 class="row-label" data-i18n="sport.r2"></h2>
+            <div class="row-body"><p data-i18n="sport.r2p"></p></div>
+          </section>
+          <section class="row">
+            <h2 class="row-label" data-i18n="sport.r3"></h2>
+            <div class="row-body"><p data-i18n="sport.r3p"></p></div>
+          </section>
+          <section class="row">
+            <h2 class="row-label" data-i18n="sport.r4"></h2>
+            <div class="row-body">
+              <p data-i18n="sport.r4todo"></p>
+              <figure class="media media--wide">
+                <img src="assets/img/sport.jpg" alt="" width="800" height="500" loading="lazy">
+                <figcaption class="media-todo" data-i18n="sport.photos"></figcaption>
+              </figure>
+            </div>
+          </section>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 07 CAREER DEVELOPMENT ============ -->
+    <section class="page" data-page="career" hidden aria-labelledby="career-h1">
+      <div class="wrap wrap--narrow">
+        <header class="page-head">
+          <p class="label">07</p>
+          <h1 class="display" id="career-h1"><span class="d1" data-i18n="career.t1"></span> <span class="d2" data-i18n="career.t2"></span></h1>
+          <p class="lede" data-i18n="career.lede"></p>
+        </header>
+
+        <div class="rows">
+          <section class="row">
+            <h2 class="row-label" data-i18n="career.r1"></h2>
+            <div class="row-body">
+              <p data-i18n="career.r1p"></p>
+              <p data-i18n="career.r1todo"></p>
+            </div>
+          </section>
+          <section class="row">
+            <h2 class="row-label" data-i18n="career.r2"></h2>
+            <div class="row-body"><p data-i18n="career.r2todo"></p></div>
+          </section>
+          <section class="row">
+            <h2 class="row-label" data-i18n="career.r3"></h2>
+            <ul class="row-body certs">
+              <li><span class="cert-name">Machine Learning Techniques in MATLAB</span><span class="cert-meta">MathWorks, <span data-i18n="career.c.d1"></span></span></li>
+              <li><span class="cert-name">Dimensionality Reduction Techniques</span><span class="cert-meta">MathWorks, <span data-i18n="career.c.d1"></span></span></li>
+              <li><span class="cert-name">Cluster Analysis with Machine Learning</span><span class="cert-meta">MathWorks, <span data-i18n="career.c.d1"></span></span></li>
+              <li><span class="cert-name">Regression Methods with Machine Learning</span><span class="cert-meta">MathWorks, <span data-i18n="career.c.d2"></span></span></li>
+              <li><span class="cert-name">Classification Methods with Machine Learning</span><span class="cert-meta">MathWorks, <span data-i18n="career.c.d2"></span></span></li>
+              <li><span class="cert-name">Machine Learning Onramp</span><span class="cert-meta">MathWorks, <span data-i18n="career.c.d3"></span></span></li>
+            </ul>
+          </section>
+          <section class="row">
+            <h2 class="row-label" data-i18n="career.r4"></h2>
+            <div class="row-body"><p data-i18n="career.r4todo"></p></div>
+          </section>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" id="contact">
+    <div class="wrap footer-inner">
+      <h2 class="display"><span class="d1" data-i18n="footer.t1">Let's</span> <span class="d2" data-i18n="footer.t2">talk</span></h2>
+      <p data-i18n="footer.p"></p>
+      <ul class="contact-links">
+        <li><a href="mailto:sergioantonioherreracastro@gmail.com"><span class="k" data-i18n="footer.email">Email</span>sergioantonioherreracastro@gmail.com</a></li>
+        <li><a href="https://www.linkedin.com/in/sergio-antonio-herrera-castro-b197713a0" target="_blank" rel="noopener"><span class="k" data-i18n="footer.linkedin">LinkedIn</span>Sergio Antonio Herrera Castro</a></li>
+      </ul>
+    </div>
+    <div class="wrap footer-base">
+      <span>© 2026 <span data-i18n="footer.rights">Sergio Antonio Herrera Castro</span></span>
+      <span data-i18n="footer.place">Toulouse, France</span>
+    </div>
+  </footer>
+
+  <script src="assets/js/content.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

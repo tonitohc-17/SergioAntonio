@@ -1,0 +1,7 @@
+# Source documents with personal data (passport, address, phone): never publish
+*.pdf
+!assets/cv/*.pdf
+
+.claude/
+.DS_Store
+Thumbs.db
